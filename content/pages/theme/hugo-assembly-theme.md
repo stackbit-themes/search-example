@@ -1,0 +1,13 @@
+---
+layout: JamstackTheme
+title: Hugo Assembly
+github: https://github.com/salsysd/hugo-assembly
+demo: https://themes.gohugo.io/theme/hugo-assembly/
+author: Salomon Valverde
+ssg: Hugo
+date: 2018-06-30T06:36:45.000Z
+description: Assembly - a hugo theme
+stale: true
+disabled: true
+disabled_reason: demo url not found
+---

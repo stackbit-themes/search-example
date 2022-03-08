@@ -1,0 +1,13 @@
+---
+layout: JamstackTheme
+title: Solar
+github: https://github.com/bake/solar-theme-hugo
+demo: https://themes.gohugo.io/theme/solar-theme-hugo/
+author: bake
+ssg: Hugo
+date: 2017-07-24T09:16:53.000Z
+description: A port of solar-theme-ghost for Hugo
+stale: false
+disabled: true
+disabled_reason: demo url not found
+---

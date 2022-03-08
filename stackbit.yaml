@@ -13,22 +13,14 @@ pageLayoutKey: layout
 objectTypeKey: type
 styleObjectModelName: ThemeStyle
 contentModels:
-  PageLayout:
+  GeneralPage:
     isPage: true
     urlPath: '/{slug}'
     newFilePath: '{slug}.md'
-  PostLayout:
+  JamstackTheme:
     isPage: true
-    urlPath: '/blog/{slug}'
-    newFilePath: 'blog/{slug}.md'
-  Person:
-    newFilePath: 'team/{slug}.json'
-  PostFeedLayout:
-    isPage: true
-    singleInstance: true
-    urlPath: '/blog'
-    file: 'blog/index.md'
-    newFilePath: 'blog/index.md'
+    urlPath: '/theme/{slug}'
+    newFilePath: 'theme/{slug}.md'
 modelsSource:
   type: files
   modelDirs:

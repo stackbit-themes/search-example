@@ -1,0 +1,13 @@
+---
+layout: JamstackTheme
+title: Hugo Bootstrap4
+github: https://github.com/mmrath/hugo-bootstrap
+demo: https://themes.gohugo.io//theme/hugo-bootstrap4/
+author: Murali Rath
+ssg: Hugo
+date: 2015-10-27T13:16:12.000Z
+description: Bootstrap theme for Hugo
+stale: true
+disabled: true
+disabled_reason: demo url not found
+---

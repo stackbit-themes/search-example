@@ -1,0 +1,13 @@
+---
+layout: JamstackTheme
+title: Taken
+github: https://github.com/vfalanis/taken
+demo: https://vfalanis.me/taken/
+author: Valentina Fernandez Alanis (vfalanis)
+ssg: Jekyll
+date: 2016-04-28T04:46:31.000Z
+description: Minimalist two-column jekyll theme
+stale: true
+disabled: true
+disabled_reason: demo url not found
+---

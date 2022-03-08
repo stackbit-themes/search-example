@@ -1,0 +1,13 @@
+---
+layout: JamstackTheme
+title: Streamer Theme
+github: https://github.com/bradykondek/streamer
+demo: https://www.streamertheme.ga
+author: Brady Kondek
+ssg: Jekyll
+date: 2019-10-14T16:19:53.000Z
+description: Theme for streamer websites
+stale: false
+disabled: true
+disabled_reason: error checking demo url
+---

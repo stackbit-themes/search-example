@@ -1,0 +1,70 @@
+name: JamstackTheme
+label: Jamstack Theme
+layout: JamstackTheme
+labelField: title
+fields:
+  - type: string
+    name: title
+    label: Title
+    required: true
+  - type: url
+    name: github
+    label: GitHub URL
+    required: true
+  - type: string
+    name: github_branch
+    label: GitHub branch
+  - type: url
+    name: demo
+    label: Demo URL
+  - type: string
+    name: author
+    label: Author
+    required: true
+  - type: datetime
+    name: date
+    label: Date
+    required: true
+  - type: string
+    name: ssg
+    label: SSG
+  - type: string
+    name: cms
+    label: CMS
+  - type: list
+    name: css
+    label: CSS
+    items:
+      type: string      
+  - type: list
+    name: archetype
+    label: Archetype
+    items:
+      type: string
+  - type: list
+    name: services
+    label: Services
+    items:
+      type: string 
+  - type: text
+    name: description
+    label: Description
+  - type: boolean
+    name: stale
+    label: Stale
+    default: false
+  - type: boolean
+    name: featured
+    label: Featured
+    default: false
+  - type: boolean
+    name: draft
+    label: Draft
+    default: false
+  - type: boolean
+    name: disabled
+    label: Disabled
+    default: false
+  - type: string
+    name: disabled_reason
+    label: Disabled reason

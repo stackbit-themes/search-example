@@ -1,0 +1,13 @@
+---
+layout: JamstackTheme
+title: Hikari
+github: https://github.com/digitalcraftsman/hugo-hikari-theme
+demo: https://themes.gohugo.io/theme/hikari/
+author: digitalcraftsman
+ssg: Hugo
+date: 2015-07-26T17:27:04.000Z
+description: Port of Mathieu Mayer-Mazzoli's Hikari theme to Hugo
+stale: true
+disabled_reason: demo url not found
+disabled: true
+---

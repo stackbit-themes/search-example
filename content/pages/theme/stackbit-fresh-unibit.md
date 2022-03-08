@@ -1,0 +1,16 @@
+---
+layout: JamstackTheme
+title: Fresh
+github: https://github.com/stackbit-themes/fresh-unibit
+demo: https://themes.stackbit.com/demos/fresh?themeBarHidden=true
+author: Stackbit
+ssg: Unibit
+css:
+  - SCSS
+archetype:
+  - Blog
+date: 2019-05-23T18:26:16.000Z
+description: Fresh is a personal theme with a blog for Stackbit
+stale: false
+draft: true
+---

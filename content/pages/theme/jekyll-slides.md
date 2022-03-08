@@ -1,0 +1,13 @@
+---
+layout: JamstackTheme
+title: Webjeda Slides
+github: https://github.com/sharu725/slides
+demo: https://webjeda.com/slides/
+author: webjeda
+ssg: Jekyll
+date: 2016-07-06T17:15:11.000Z
+description: A presentstion theme
+stale: false
+disabled: true
+disabled_reason: demo url not found
+---

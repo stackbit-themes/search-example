@@ -1,0 +1,13 @@
+---
+layout: JamstackTheme
+title: Internet Weblog
+github: https://github.com/jnjosh/internet-weblog
+demo: https://themes.gohugo.io/theme/internet-weblog/
+author: Josh Johnson
+ssg: Hugo
+date: 2016-02-20T05:44:23.000Z
+description: internet weblog theme for Hugo
+stale: true
+disabled: true
+disabled_reason: demo url not found
+---

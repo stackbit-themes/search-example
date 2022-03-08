@@ -1,0 +1,13 @@
+---
+layout: JamstackTheme
+title: Hugo Initio
+github: https://github.com/miguelsimoni/hugo-initio
+demo: https://themes.gohugo.io/theme/hugo-initio/
+author: Miguel Simoni
+ssg: Hugo
+date: 2017-05-30T14:34:35.000Z
+description: Hugo Theme adaptation of Initio from GetTemplate
+stale: false
+disabled: true
+disabled_reason: demo url not found
+---

@@ -1,0 +1,13 @@
+---
+layout: JamstackTheme
+title: EasyBook
+github: https://github.com/laobubu/jekyll-theme-EasyBook
+demo: https://blog.laobubu.net/
+author: laobubu
+ssg: Jekyll
+date: 2015-01-15T06:14:44.000Z
+description: Another Jekyll Blog Theme 'EasyBook'
+stale: true
+disabled: true
+disabled_reason: demo url not found
+---
