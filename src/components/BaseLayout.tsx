@@ -9,7 +9,7 @@ export default function BaseLayout(props) {
                 <title>{page.title}</title>
                 {site.favicon && <link rel="icon" href={site.favicon} />}
             </Head>
-            <body className="bg-teal-100 min-h-screen">{props.children}</body>
+            <body className="bg-gray-100 min-h-screen">{props.children}</body>
         </div>
     );
 }
