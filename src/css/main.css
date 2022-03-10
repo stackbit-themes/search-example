@@ -5,6 +5,7 @@
 /*
     Tweak Algolia InstantSearch classes
 */
+
 ul.ais-Hits-list {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -12,9 +13,13 @@ ul.ais-Hits-list {
     margin-top: 20px;
 }
 
+form.ais-SearchBox-form {
+    background-color: transparent;
+}
+
 input.ais-SearchBox-input {
     box-shadow: none;
-    border-radius: 7px;
+    border-radius: 8px;
 }
 
 /* Make the li "wrapper" of hits invisible, so we can style it fully by its contents */

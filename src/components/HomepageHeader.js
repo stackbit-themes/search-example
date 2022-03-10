@@ -1,42 +1,68 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
-/*
-    Next up: make this into editable content with Markdown/MDX :-)
-*/
 
 const techStack = [
-    { label: 'Stackbit', url: 'https://www.stackbit.com' },
-    { label: 'Next.js', url: 'https://nextjs.org/' },
-    { label: 'Algolia', url: 'https://www.algolia.com' },
-    { label: 'Tailwind', url: 'https://tailwindcss.com' },
-    { label: 'daisyUI', url: 'https://daisyui.com' }
+    { name: 'stackbit', url: 'https://www.stackbit.com' },
+    { name: 'next', url: 'https://nextjs.org/' },
+    { name: 'tailwind', url: 'https://tailwindcss.com', width: 'w-[32px]' },
+    { name: 'algolia', url: 'https://www.algolia.com', width: 'w-[90px]' },
+    { name: 'daisyUI', url: 'https://daisyui.com', width: 'w-[80px]' }
 ];
 
 export default function HomepageHeader(props) {
-    const { page, themeCounts, searchIndexName } = props;
+    const { page, themeCounts } = props;
     return (
-        <div className="flex flex-col mx-20 mb-4 gap-2">
-            <div data-sb-field-path="title" className="text-2xl font-bold mt-8">
-                {page.title}
+        <div className="flex flex-col mx-20 mb-6 gap-2">
+            <div className="flex justify-center my-6">
+                <div data-sb-field-path="title" className="text-xl text-neutral font-bold">
+                    {page.title}
+                </div>
             </div>
-            <div className="flex gap-1 items-center">
-                <span>Tech stack of this site: </span>
-                {techStack.map((tech, idx) => (
-                    <a className="badge badge-outline rounded-md" href={tech.url} key={idx}>
-                        {tech.label}
-                    </a>
-                ))}
-            </div>
-            <div className="text-md font-light">
-                Dataset:{' '}
-                <a className="underline" href="https://jamstackthemes.dev">
-                    Jamstackthemes.dev
-                </a>
-                <br />
-                Live themes: <span className="font-semibold">{themeCounts.enabled}</span> (out of{' '}
-                <span className="font-semibold">{themeCounts.all}</span> in total)
-                <br />
-                Results below are returned from Algolia (index: <strong>{searchIndexName}</strong>). If you edit
-                content, remember to re-index!
+
+            <div className="stats shadow rounded-[8px]">
+                <div className="stat">
+                    <div className="stat-title">Active themes</div>
+                    <div className="stat-value">{themeCounts.enabled.toLocaleString()}</div>
+                    <div className="stat-desc">Themes with working live demo</div>
+                </div>
+
+                <div className="stat">
+                    <div className="stat-title">All themes</div>
+                    <div className="stat-value">{themeCounts.all.toLocaleString()}</div>
+                    <div className="stat-desc">
+                        From{' '}
+                        <a className="underline" href="https://jamstackthemes.dev">
+                            Jamstackthemes.dev
+                        </a>
+                    </div>
+                </div>
+
+                <div className="stat">
+                    <div className="stat-title">Environment</div>
+                    <div className="stat-value">{process.env.NODE_ENV}</div>
+                    <div className="stat-desc">Algolia index is per-environment</div>
+                </div>
+
+                <div className="stat">
+                    <div className="stat-title">Tech stack</div>
+                    <div className="stat-value flex items-center gap-[10px]">
+                        {techStack.map((tech, idx) => {
+                            const classes = [tech.width || 'w-[26px]', 'inline-block'].join(' ');
+                            return (
+                                <div key={idx} className={classes}>
+                                    <a href={tech.url}>
+                                        <img
+                                            className="inline max-width-full"
+                                            src={`/images/logos/${tech.name}.svg`}
+                                            alt={`${tech.name} logo`}
+                                        />
+                                    </a>
+                                </div>
+                            );
+                        })}
+                    </div>
+                    <div className="stat-desc">Built by developers, and looks like it ;-)</div>
+                </div>
             </div>
         </div>
     );
