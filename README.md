@@ -8,8 +8,8 @@
 
 <img width="1423" alt="image" src="https://user-images.githubusercontent.com/2673881/158059043-32ff7359-f008-4ed4-80be-db5691ac7a11.png">
 
-The details of all themes in [jamstackthemes.dev](https://jamstackthemes.dev) is copied into this repo (see under `/content`).<br/>
-Themes can be added & edited within the Stackbit UI, and are indexed to Algolia to power a fast search.
+Details of all themes in [jamstackthemes.dev](https://jamstackthemes.dev) are copied into this repository (under `/content`).<br/>
+Individual themes can be then added & edited within the Stackbit UI, and are indexed to Algolia to power a fast search.
 
 There are currently about ~1,000 themes, and each has its own page. To keep build times short, we're not actually generating all pages at build time. Rather, [we use Next's dynamic routes](./src/pages/theme/%5Bid%5D.js) + the `fallback` parameter to instruct Next to generate pages on demand. Meaning, once per page (after each deployment) only.
 
