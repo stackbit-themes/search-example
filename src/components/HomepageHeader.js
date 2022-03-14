@@ -2,6 +2,7 @@
 import React from 'react';
 
 const techStack = [
+    { name: 'github', url: 'https://github.com/stackbit/example-search-many-themes', width: 'w-[28px]' },
     { name: 'stackbit', url: 'https://www.stackbit.com' },
     { name: 'next', url: 'https://nextjs.org/' },
     { name: 'tailwind', url: 'https://tailwindcss.com', width: 'w-[32px]' },
@@ -12,8 +13,8 @@ const techStack = [
 export default function HomepageHeader(props) {
     const { page, themeCounts } = props;
     return (
-        <div className="flex flex-col mx-20 mb-6 gap-2">
-            <div className="flex justify-center my-6">
+        <div className="flex flex-col mx-[2.5%] mb-6 gap-2">
+            <div className="flex text-center my-6">
                 <div data-sb-field-path="title" className="text-xl text-neutral font-bold">
                     {page.title}
                 </div>

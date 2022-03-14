@@ -6,7 +6,10 @@ import { themeThumbnailUrl } from '../utils/theme-utils';
 export function ThemeCard({ hit }) {
     const thumbnailImageUrl = themeThumbnailUrl(hit.github);
     return (
-        <div data-sb-object-id={hit.objectID} className="card card-compact w-96 bg-base-100 shadow-lg rounded-lg">
+        <div
+            data-sb-object-id={hit.objectID}
+            className="card card-compact min-w-48 max-w-96 bg-base-100 shadow-lg rounded-lg"
+        >
             <Link href={hit.url}>
                 <a>
                     <img className="border-b-[1px]" src={thumbnailImageUrl} alt="Thumbnail image" />

@@ -22,7 +22,7 @@ export function JamstackThemePage(props) {
             </div>
 
             <div className="flex justify-center">
-                <div className="card w-[50%] bg-base-100 shadow-xl">
+                <div className="card w-[95%] lg:w-[950px] bg-base-100 shadow-xl">
                     <Link href={page.github}>
                         <a>
                             <img className="border-b-[1px] max-w-full" src={imageUrl} alt="Thumbnail image" />

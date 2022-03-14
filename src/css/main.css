@@ -8,9 +8,46 @@
 
 ul.ais-Hits-list {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-gap: 20px;
     margin-top: 20px;
+}
+
+@media (max-width: 640px) {
+    ul.ais-Hits-list {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .stat:nth-child(n + 2) {
+        visibility: hidden;
+    }
+
+    .stats {
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 641px) {
+    ul.ais-Hits-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stat:nth-child(n + 3) {
+        visibility: hidden;
+    }
+
+    .stats {
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1200px) {
+    ul.ais-Hits-list {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .stat:nth-child(n + 1) {
+        visibility: visible;
+    }
 }
 
 form.ais-SearchBox-form {

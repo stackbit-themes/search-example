@@ -14,7 +14,7 @@ const searchClient = algoliasearch(
     process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY
 );
 const searchIndexName = process.env.NODE_ENV + '_' + process.env.NEXT_PUBLIC_ALGOLIA_INDEX_NAME;
-const searchLabel = 'Search for framework names, author names or really anything...';
+const searchLabel = 'Search frameworks, authors or anything...';
 
 function Homepage(props) {
     const { page, site } = props;
@@ -28,10 +28,10 @@ function Homepage(props) {
 
 function ThemeSearch() {
     return (
-        <div className="mx-20">
+        <div className="mx-[2.5%]">
             <InstantSearch searchClient={searchClient} indexName={searchIndexName}>
                 <div className="card shadow bg-base-100">
-                    <div className="card-body">
+                    <div className="card-body p-[2.5%]">
                         <SearchBox translations={{ placeholder: searchLabel }} />
                         <Hits hitComponent={ThemeCard} />
                     </div>
