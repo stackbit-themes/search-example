@@ -4,7 +4,7 @@
 
 **Showcasing:** [Stackbit](https://stackbit.com), [Algolia](https://algolia.com) & [on-demand static generation](https://nextjs.org/docs/api-reference/data-fetching/get-static-paths#fallback-true) with Next.js
 
-**Live demo:** [stackbit-search-themes-example.netlify.app](https://stackbit-search-themes-example.netlify.app/).
+**Live demo:** [search-example.stackbit.app](https://search-example.stackbit.app/).
 
 <img width="1423" alt="image" src="https://user-images.githubusercontent.com/2673881/158059043-32ff7359-f008-4ed4-80be-db5691ac7a11.png">
 
