@@ -1,7 +1,8 @@
 stackbitVersion: ~0.4.0
 ssgName: nextjs
-nodeVersion: '14'
+nodeVersion: "14"
 cmsName: git
+devCommand: "npm run dev"
 assets:
   referenceType: static
   staticDir: public
@@ -15,12 +16,12 @@ styleObjectModelName: ThemeStyle
 contentModels:
   GeneralPage:
     isPage: true
-    urlPath: '/{slug}'
-    newFilePath: '{slug}.md'
+    urlPath: "/{slug}"
+    newFilePath: "{slug}.md"
   JamstackTheme:
     isPage: true
-    urlPath: '/theme/{slug}'
-    newFilePath: 'theme/{slug}.md'
+    urlPath: "/theme/{slug}"
+    newFilePath: "theme/{slug}.md"
 modelsSource:
   type: files
   modelDirs:

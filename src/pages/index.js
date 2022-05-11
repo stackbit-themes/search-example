@@ -35,7 +35,7 @@ function Homepage(props) {
         {searchClient ? (
           <ThemeSearch />
         ) : (
-          <AlertBox message="Please set the needed environment variables for Algolia (refer to .env.local.example file)." />
+          <AlertBox message="Please set environment variables for Algolia and then restart Next.js via Project Settings->Advanced." />
         )}
       </div>
     </BaseLayout>
