@@ -2,7 +2,6 @@ stackbitVersion: ~0.4.0
 ssgName: nextjs
 nodeVersion: "14"
 cmsName: git
-devCommand: "npm run dev"
 assets:
   referenceType: static
   staticDir: public
