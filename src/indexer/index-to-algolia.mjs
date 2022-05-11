@@ -105,3 +105,6 @@ const themes = await getJamstackThemes();
 const objectsToIndex = buildObjectsToIndex(themes);
 await indexObjects(objectsToIndex);
 console.timeEnd("Total time");
+
+// Ensure the script terminates even if some connections are open in Sourcebit/Algolia etc.
+process.exit(0);
