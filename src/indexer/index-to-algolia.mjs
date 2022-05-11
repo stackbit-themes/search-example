@@ -96,7 +96,7 @@ async function indexObjects(objectsToIndex) {
     ],
     customRanking: ["desc(date)"],
   });
-
+  await client.destroy();
   console.log(`Indexed ${response.objectIDs.length} objects`);
 }
 
