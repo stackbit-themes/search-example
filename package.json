@@ -1,54 +1,56 @@
 {
-    "name": "starter-nextjs-theme",
-    "version": "0.1.0",
-    "engines": {
-        "node": ">=14 <16",
-        "npm": "~6"
-    },
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "index": "node src/indexer/index-to-algolia.mjs",
-        "build-production": "next build && NODE_ENV=production node src/indexer/index-to-algolia.mjs",
-        "start": "next start"
-    },
-    "dependencies": {
-        "algoliasearch": "^4.12.2",
-        "axios": "^0.24.0",
-        "classnames": "^2.3.1",
-        "daisyui": "^2.6.3",
-        "dayjs": "^1.10.8",
-        "instantsearch.css": "^7.4.5",
-        "jose": "^3.20.3",
-        "markdown-to-jsx": "^7.1.7",
-        "marked": "^4.0.12",
-        "next": "^12.1.0",
-        "parse-github-url": "^1.0.2",
-        "react": "17.0.2",
-        "react-dom": "17.0.2",
-        "react-instantsearch-dom": "^6.22.0",
-        "sourcebit": "^0.11.1",
-        "sourcebit-source-filesystem": "^0.2.0",
-        "sourcebit-target-next": "^0.8.1",
-        "tailwindcss": "^3.0.23"
-    },
-    "devDependencies": {
-        "@netlify/plugin-nextjs": "^4.2.7",
-        "@stackbit/cli": "^0.1.27",
-        "@tailwindcss/line-clamp": "^0.3.1",
-        "@types/react": "^17.0.39",
-        "autoprefixer": "^10.4.2",
-        "eslint": "^7.29.0",
-        "eslint-config-next": "^11.1.4",
-        "eslint-config-prettier": "^8.5.0",
-        "postcss": "^8.4.8",
-        "postcss-import": "^14.0.2",
-        "postcss-nested": "^5.0.6",
-        "prettier": "^2.5.1",
-        "sass": "^1.49.9",
-        "typescript": "^4.6.2"
-    },
-    "description": "A Nextjs page builder, component library and data source mapper all in one.",
-    "main": "next.config.js",
-    "license": "MIT"
+  "name": "starter-nextjs-theme",
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=14 <16",
+    "npm": "~6"
+  },
+  "scripts": {
+    "dev": "node src/indexer/index-to-algolia.mjs --no-fail && next dev",
+    "dev-only": "next dev",
+    "build": "next build",
+    "index": "node src/indexer/index-to-algolia.mjs",
+    "build-production": "NODE_ENV=production node src/indexer/index-to-algolia.mjs && next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "algoliasearch": "^4.12.2",
+    "axios": "^0.24.0",
+    "classnames": "^2.3.1",
+    "daisyui": "^2.6.3",
+    "dayjs": "^1.10.8",
+    "dotenv": "^16.0.0",
+    "instantsearch.css": "^7.4.5",
+    "jose": "^3.20.3",
+    "markdown-to-jsx": "^7.1.7",
+    "marked": "^4.0.12",
+    "next": "^12.1.0",
+    "parse-github-url": "^1.0.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-instantsearch-dom": "^6.22.0",
+    "sourcebit": "^0.11.1",
+    "sourcebit-source-filesystem": "^0.2.0",
+    "sourcebit-target-next": "^0.8.1",
+    "tailwindcss": "^3.0.23"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.2.7",
+    "@stackbit/cli": "^0.1.27",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "@types/react": "^17.0.39",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^7.29.0",
+    "eslint-config-next": "^11.1.4",
+    "eslint-config-prettier": "^8.5.0",
+    "postcss": "^8.4.8",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.6",
+    "prettier": "^2.5.1",
+    "sass": "^1.49.9",
+    "typescript": "^4.6.2"
+  },
+  "description": "A Nextjs page builder, component library and data source mapper all in one.",
+  "main": "next.config.js",
+  "license": "MIT"
 }
